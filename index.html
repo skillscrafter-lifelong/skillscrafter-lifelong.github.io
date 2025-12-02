@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Lifelong Language-Conditioned Robotic Manipulation Learning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Lifelong Language-Conditioned Robotic Manipulation Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Anonymous</a></span>
+                  </div>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/SkillsCrafter/code" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>source code</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 1200px; margin: 0 auto;">
+            <img 
+              src="static/images/F1.png" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 1200px; margin: 0 auto;">
+            <strong>The proposed Lifelong Robotic Manipulation task:</strong>
+            (a) SkillsCrafter is able to evolve and learn new skills based on learned skills. It maintains a skill knowledge base that stores learned knowledge to allow for efficient learning of new skills using shared knowledge of old skills, and for performing any unknown skill in the open world using previously learned knowledge. (b) Skills catastrophic forgetting under lifelong learning setting. (c) Our SkillsCrafter has a good anti-forgetting performance.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 响应式调整 */
+  @media screen and (max-width: 768px) {
+    .image-wrapper {
+      max-width: 50% !important;
+    }
+    .subtitle {
+      padding: 0 15px;
+    }
+  }
+</style>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container" style="max-width: 1000px; margin: 0 auto;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Traditional language-conditioned manipulation agent adaptation to new skills leads to catastrophic forgetting of old skills, limiting more practical dynamic scene deployment. In this paper, we propose SkillsCrafter, a novel robotic manipulation model designed to continually learn multiple manipulation skills while reducing catastrophic forgetting of old skills. Specifically, to achieve lifelong learning of new skills, we propose a Manipulation Skills Adaptation to achieve retaining the old skills knowledge while inheriting the shared knowledge between new and old skills to facilitate learning of new skills. Meanwhile, we perform the singular value decomposition on the diverse manipulation skills instructions to obtain a common skill semantic subspace projection matrices to record skills essential semantic space. To achieve forget-less and generalization manipulation, we propose a Skills Specialization Aggregation to compute inter-skills similarity in skill semantic subspaces to achieve aggregation of the previously learned skill knowledge for any new or unknown skill manipulation. Extensive simulator experiments and real-world deployments demonstrate the effectiveness and superiority of the proposed SkillsCrafter. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 1200px; margin: 0 auto;">
+            <img 
+              src="static/images/F2.png" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 1200px; margin: 0 auto;">
+           Illustration of the proposed SkillsCrafter pipeline. It includes (a) a Manipulation Skills Adaptation to achieve retaining the old skills knowledge while inheriting the shared knowledge between new and old skills to facilitate learning of new skills; (b) a Skills Specialization Aggregation to compute inter-skills similarity in skill-specific subspaces to achieve adaptive aggregation of skills knowledge; (c) a Skills Specified Inference to loads aggregated knowledge to achieve any skill manipulation inference.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 1000px; margin: 0 auto;">
+            <img 
+              src="static/images/F3.png" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 1200px; margin: 0 auto;">
+            <strong></strong>Illustration of the experiment robotic skill tasks setting.</strong> We establish a total of 12 robotic simulator skills and 6 real-environment robotic skills for incremental learning. The first 16 skills serve as training and testing tasks for continual learning, while the last two skills are not trained and serve as open-world generalization testing.
+          
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <!-- 图1：照片 -->
+      <div class="has-text-centered mb-5">
+        <div class="image-wrapper" style="max-width: 500px; margin: 0 auto;">
+          <img 
+            src="static/images/F7.png" 
+            alt="Photograph of the UR5 robotic system"
+            style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+          >
+        </div>
+        <h2 class="subtitle is-6 mt-2">
+          (a): A photograph of the proposed UR5 robotic system.
+        </h2>
+      </div>
+
+      <!-- 图2：示意图 -->
+      <div class="has-text-centered mb-5">
+        <div class="image-wrapper" style="max-width: 1000px; margin: 0 auto;">
+          <img 
+            src="static/images/F8.png" 
+            alt="Illustration of the UR5 robotic system"
+            style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+          >
+        </div>
+        <h2 class="subtitle is-6 mt-2">
+          (b): Illustration of the proposed UR5 robotic system.
+        </h2>
+      </div>
+
+      <!-- 图注文字 -->
+        <h2 class="subtitle has-text-centered mt-4" style="max-width: 1050px; margin: 0 auto;">
+          The proposed UR5 robotic system is shown in Figure (a). The system consists of a UR5 robotic arm, a RealSense SR300 camera, a PHLIPS P506 camera, a control cabinet, and a calculation platform, as shown in Figure (b).
+        </h2>
+
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <!-- 图1：照片 -->
+      <div class="has-text-centered mb-5">
+        <div class="image-wrapper" style="max-width: 600px; margin: 0 auto;">
+          <img 
+            src="static/images/al1.png" 
+            alt="Photograph of the UR5 robotic system"
+            style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+          >
+        </div>
+      </div>
+
+      <!-- 图2：示意图 -->
+      <div class="has-text-centered mb-5">
+        <div class="image-wrapper" style="max-width: 600px; margin: 0 auto;">
+          <img 
+            src="static/images/al2.png" 
+            alt="Illustration of the UR5 robotic system"
+            style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+          >
+        </div>
+      </div>
+        <h2 class="subtitle has-text-centered mt-4" style="max-width: 1500px; margin: 0 auto;">
+          For clarity, a summary of the proposed SkillsCrafter learning algorithm and the inference algorithm is provided above.
+        </h2>
+
+    </div>
+  </div>
+</section>
+
+<!-- Three Independent Videos Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
+        Real Robot Demonstrations
+      </h1>
+      
+      <!-- 任务18 -->
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: green;">Task18</span>: close the top drawer
+          </h2>
+
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/关上抽屉.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: green;">Task18</span>: open the top drawer
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/开上抽屉.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- 任务17 -->
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: green;">Task17</span>: put the round block onto the square block
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/圆柱.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <!-- 视频16 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: green;">Task17</span>: put the square block onto the round block
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/圆柱2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- 任务16 -->
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task16</span>: put the toy car into the box
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/小车.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task16</span>: put the steel ring into the box
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/小鸡.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- 任务15 -->
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task15</span>: grab the bottle with the white cap
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/抓瓶子.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task15</span>: grab the green bottle
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/抓瓶子2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- 任务14 -->
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task14</span>: push the blue button, then push the yellow button
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/按钮1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task14</span>: push the green button, then push the red button
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/按钮2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- 任务13 -->
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task13</span>: grab the yellow doll
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/娃娃1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <!-- 视频2 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: red;">Task13</span>: grab the blue doll
+          </h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/娃娃2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
+        Simulation Environment Demonstrations
+      </h1>
+      
+       <!-- 任务12 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task12</span>: take the steak off the grill
+          </h2>
+          <img 
+            src="static/videos/demo_gif/meat_off_grill_episode42.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task12</span>: take the steak off the grill
+          </h2>
+          <img 
+            src="static/videos/demo_gif/meat_off_grill_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task12</span>: take the steak off the grill
+          </h2>
+          <img 
+             src="static/videos/demo_gif/meat_off_grill_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务11 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task11</span>: stack 2 rose blocks
+          </h2>
+          <img 
+             src="static/videos/demo_gif/stack_blocks_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task11</span>: stack 3 blue blocks
+          </h2>
+          <img 
+            src="static/videos/demo_gif/stack_blocks_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task11</span>: stack 4 navy blocks
+          </h2>
+          <img 
+            src="static/videos/demo_gif/stack_blocks_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务10 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task10</span>: stack the wine bottle to the left of the rack
+          </h2>
+          <img 
+            src="static/videos/demo_gif/place_wine_at_rack_location_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task10</span>: stack the wine bottle to the middle of the rack
+          </h2>
+          <img 
+            src="static/videos/demo_gif/place_wine_at_rack_location_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task10</span>: stack the wine bottle to the right of the rack
+          </h2>
+          <img 
+             src="static/videos/demo_gif/place_wine_at_rack_location_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务9 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task9</span>: close the black jar
+          </h2>
+          <img 
+            src="static/videos/demo_gif/close_jar_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task9</span>: close the blue jar
+          </h2>
+          <img 
+            src="static/videos/demo_gif/close_jar_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task9</span>: close the blue jar
+          </h2>
+          <img 
+             src="static/videos/demo_gif/close_jar_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务8 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task8</span>: screw in the gray light bulb
+          </h2>
+          <img 
+            src="static/videos/demo_gif/light_bulb_in_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task8</span>: screw in the blue light bulb
+          </h2>
+          <img 
+            src="static/videos/demo_gif/light_bulb_in_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task8</span>: screw in the red light bulb
+          </h2>
+          <img 
+             src="static/videos/demo_gif/light_bulb_in_episode13.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务7 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task7</span>: use the stick to drag the cube onto the gray target
+          </h2>
+          <img 
+            src="static/videos/demo_gif/reach_and_drag_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task7</span>: use the stick to drag the cube onto the gray target
+          </h2>
+          <img 
+            src="static/videos/demo_gif/reach_and_drag_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task7</span>: use the stick to drag the cube onto the gray target
+          </h2>
+          <img 
+             src="static/videos/demo_gif/reach_and_drag_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务6 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task6</span>: turn left tap
+          </h2>
+          <img 
+            src="static/videos/demo_gif/turn_tap_episode66.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task6</span>: turn right tap
+          </h2>
+          <img 
+            src="static/videos/demo_gif/turn_tap_episode6.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task6</span>: turn left tap
+          </h2>
+          <img 
+             src="static/videos/demo_gif/turn_tap_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务5 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <br>
+            <span style="color: #FFC107;">Task5</span>: push the maroon button
+            <br><br>
+          </h2>
+          <img 
+            src="static/videos/demo_gif/push_buttons_episode66.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <br>
+            <span style="color: #FFC107;">Task5</span>: push the maroon button, then push the green button
+          </h2>
+          <img 
+            src="static/videos/demo_gif/push_buttons_episode6.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task5</span>: push the maroon button, then push the green button, then push the orange button
+          </h2>
+          <img 
+             src="static/videos/demo_gif/push_buttons_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务4 -->
+       <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task4</span>: sweep dirt to dustpan
+          </h2>
+          <img 
+            src="static/videos/demo_gif/sweep_to_dustpan_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task4</span>: sweep dirt to dustpan
+          </h2>
+          <img 
+            src="static/videos/demo_gif/sweep_to_dustpan_episode88.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task4</span>: sweep dirt to dustpan
+          </h2>
+          <img 
+             src="static/videos/demo_gif/sweep_to_dustpan_episode66.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务3 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task3</span>: put the money away in the safe on the top shelf
+          </h2>
+          <img 
+            src="static/videos/demo_gif/put_money_in_safe_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task3</span>: put the money away in the safe on the middle shelf
+          </h2>
+          <img 
+            src="static/videos/demo_gif/put_money_in_safe_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task3</span>: put the money away in the safe on the bottom shelf
+          </h2>
+          <img 
+             src="static/videos/demo_gif/put_money_in_safe_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务2 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task2</span>: slide the block to target
+          </h2>
+          <img 
+            src="static/videos/demo_gif/slide_block_to_target_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task2</span>: slide the block to target
+          </h2>
+          <img 
+            src="static/videos/demo_gif/slide_block_to_target_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task2</span>: slide the block to target
+          </h2>
+          <img 
+             src="static/videos/demo_gif/slide_block_to_target_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+       <!-- 任务1 -->
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task1</span>: open the top drawer
+          </h2>
+          <img 
+            src="static/videos/demo_gif/open_drawer_episode42.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task1</span>: open the middle drawer
+          </h2>
+          <img 
+            src="static/videos/demo_gif/open_drawer_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">
+            <span style="color: #FFC107;">Task1</span>: open the bottom drawer
+          </h2>
+          <img 
+             src="static/videos/demo_gif/open_drawer_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* 视频容器样式 */
+  .video-container {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* 视频元素样式 */
+  .centered-video {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  /* 响应式调整 */
+  @media screen and (max-width: 768px) {
+    .video-container {
+      padding: 10px;
+    }
+    .centered-video {
+      max-height: 300px;
+    }
+  }
+</style>
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
